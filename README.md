@@ -1,0 +1,2 @@
+# TrendMart-International-Global-E-Commerce-AWS-Cloud-Migration-Strategy
+TrendMart International is an academic cloud architecture and migration strategy project completed for CS6620: Fundamentals of Cloud Computing. The project presents a full AWS modernization strategy for a global e-commerce company migrating from a legacy monolithic infrastructure to a scalable, resilient, multi-region cloud platform.
