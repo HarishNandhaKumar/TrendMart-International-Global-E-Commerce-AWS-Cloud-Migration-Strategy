@@ -42,31 +42,31 @@ The proposed architecture migrates TrendMart to a distributed AWS platform using
 
 ### 1. Overall System Architecture
 
-![Overall System Architecture](docs/diagrams/01-overall-system-architecture.png)
+![Overall System Architecture](01%20OVERALL%20SYSTEM%20ARCHITECTURE%20DIAGRAM.png)
 
 This diagram shows the global AWS architecture across North America, Europe, and Asia. It includes Route 53 latency-based routing, CloudFront, regional VPCs, ECS Fargate services, Aurora, DynamoDB, S3, messaging components, and centralized security and operations services.
 
 ### 2. Network Design and Security Zones
 
-![Network Design and Security Zones](docs/diagrams/02-network-design-and-security-zones.png)
+![Network Design and Security Zones](02%20NETWORK%20DESIGN%20AND%20SECURITY%20ZONES%20DIAGRAM.png)
 
 This diagram details the VPC design across public, private application, and private data subnets. It includes Internet Gateway, NAT Gateways, Application Load Balancer, ECS application tier, Aurora, DynamoDB, S3, route tables, security groups, and VPN access for internal operations.
 
 ### 3. Order Processing Data Flow
 
-![Order Processing Data Flow](docs/diagrams/03-data-flow-diagram.png)
+![Order Processing Data Flow](03%20DATA%20FLOW%20DIAGRAM.png)
 
 This diagram explains how a customer order moves through the platform, including API routing, cart lookup, inventory validation, payment processing, order creation, asynchronous inventory updates, email notifications, and analytics event streaming.
 
 ### 4. Disaster Recovery Design
 
-![Disaster Recovery Design](docs/diagrams/04-disaster-recovery-design.png)
+![Disaster Recovery Design](04%20DISASTER%20RECOVERY%20DESIGN%20DIAGRAM.png)
 
 This diagram shows the failover design between the primary region and disaster recovery region. It includes Route 53 health checks, ECS Fargate standby workloads, Aurora cross-region replication, Aurora read replica promotion, and S3 Cross-Region Replication.
 
 ### 5. Data Storage and Database Architecture
 
-![Data Storage and Database Architecture](docs/diagrams/05-data-storage-and-database-architecture.png)
+![Data Storage and Database Architecture](05%20DATA%20STORAGE%20AND%20DATABASE%20ARCHITECTURE%20DIAGRAM.png)
 
 This diagram explains the data layer design using Aurora PostgreSQL for transactional data, DynamoDB for carts and sessions, ElastiCache Redis for hot data, S3 for product images and receipts, and Kinesis for analytics data lake ingestion.
 
